@@ -41,9 +41,9 @@ h2{
 .middle-container{
     background-color: #caf7e3 ;
     position: relative;
-    padding-top: 50px;
-    margin: 50px;
+    padding-top: 100px;
     text-align: center;
+    height: 100vh;
 }
 .profilepic{
 
