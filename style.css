@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+html{
+    height: 100%;
+}
 body{
     margin: 0;
     background-color:#caf7e3;
