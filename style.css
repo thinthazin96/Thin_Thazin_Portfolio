@@ -24,6 +24,12 @@ h2{
     padding-top: 100px;
     text-align: center;
 }
+.profile-top-container{
+    background-color: #caf7e3; 
+    position: relative;
+    padding-top: 100px;
+    text-align: center;
+}
 .title{
     font-family: 'Poppins', sans-serif;
     font-size: 3em;
@@ -76,7 +82,7 @@ h2{
     
 }
 /* Navigation */
-.container{
+.navbar{
     width: 80%;
     margin: auto;
 }
