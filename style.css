@@ -21,7 +21,7 @@ h2{
 .top-container{
     background-color: #caf7e3; 
     position: relative;
-    padding-top: 100px;
+    padding-top: 10px;
     text-align: center;
 }
 .title{
@@ -41,15 +41,21 @@ h2{
 .pagoda{
     position: relative;
 }
-.middle-container{
-    background-color: #caf7e3 ;
-    position: relative;
-    padding-top: 100px;
-    text-align: center;
-    height: 100vh;
-}
-.profilepic{
 
+/* About Photo Layout */
+.profiles-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-container {
+    text-align: center;
+    width: 21.875rem;
+    padding: 1rem;
+}
+
+.profilepic{
     border-radius: 60%;
     width:250px;
     height:300px;
@@ -67,14 +73,7 @@ h2{
     width: 350px;
     height: 300px;
 }
-.bottom-container{
-    background-color: #f9dfdc;
-}
-.middle-container .myinfo{
-    margin: 50px;
-    padding: 100ox;
-    
-}
+
 /* Navigation */
 .container{
     width: 80%;
