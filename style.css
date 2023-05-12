@@ -120,6 +120,16 @@ nav a:hover{
     color: #2C2891;
 }
 
+/* Burger Menu */
+.burger-menu {
+    color: var(--primary-color);
+    font-size: 2rem;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+}
+
 /* Hovering Animation */
 /* nav a::before{
     content: '';
