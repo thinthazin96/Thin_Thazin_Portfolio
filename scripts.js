@@ -1,45 +1,19 @@
-function validation(){
-    var name = document.getElementById("name").value;
-    var subject = document.getElementById("subject").value;
-    var phone = document.getElementById("phone").value;
-    var email = document.getElementById("email").value;
-    var message = document.getElementById("message").value;
-    var error_message = document.getElementById("error_message");
-    var text;
+// Nav hamburgerburger selections
+const burger = document.querySelector("#burger-menu");
+const ul = document.querySelector("nav ul");
+const nav = document.querySelector("nav");
 
-    error_message.style.padding = "10px";
+// Select nav links
+const navLink = document.querySelectorAll(".nav-link");
 
-    if(name.length <= 1){
-        text = "Please Enter Valid Name";
-        error_message.innerHTML = text;
-        return false;
-    }
-    if(subject.length <= 1){
-        text = "Please Enter Correct Subject";
-        error_message.innerHTML = text;
-        return false;
-    }
+// Hamburger menu function
+burger.addEventListener("click", () => {
+  ul.classList.toggle("show");
+});
 
-    // Input has to be number in phone number Selection
-    if(isNaN(phone) || phone.length != 10){
-        text = "Please Enter Valid Phone Number";
-        error_message.innerHTML = text;
-        return false;
-    }
-
-    //Throw error if @ does not include in email section.
-    if(email.indexOf("@") == -1 || email.length< 6 ){
-        text = "Please Enter Valid Email";
-        error_message.innerHTML = text;
-        return false;
-    }
-
-    if(message.lenght <= 1){
-        text = "Please Enter More Than 1 Character";
-        error_message.innerHTML = text;
-        return false;
-    }
-    alert("Message is successfully sent!")
-    return true;
- 
-}
+// Close hamburger menu when a link is clicked
+navLink.forEach((link) =>
+  link.addEventListener("click", () => {
+    ul.classList.remove("show");
+  })
+);
