@@ -12,26 +12,18 @@
     <title>Projects</title>
 </head>
 <body>
-    <header>
-        <div class = "container">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li>
-                        <div class="dropdown">
-                        <a href="projects.html" class="dropbtn">Projects</a>
-                        <div class="dropdown-content">
-                          <a href="#">Front-end Projects</a>
-                          <a href="#">Backend Projects</a>
-                          <a href="#">DS & Algorithm</a>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-            </nav>
-        </div>   
-    </header>
+     <!-- Navbar -->
+    <nav>
+    <ul class="navigation">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+    </ul>
+    <button class="burger-menu" id="burger-menu">
+      <ion-icon class="bars" name="menu-outline"></ion-icon>
+      <!-- <ion-icon class="times" name="close-outline"></ion-icon> -->
+    </button>
+    </nav>
     
     <!-- Project Section -->
     <section class="projects" id="projects">
@@ -85,6 +77,16 @@
         </div>
       </section>
 
+      <!-- Ion icons scripts -->
+      <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="scripts.js"></script>
 </body>
 <footer class="footer">
     <ul class="social-list">

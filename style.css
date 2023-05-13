@@ -1,15 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
-html{
+/* @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap'); */
+html, body{
     height: 100%;
 }
 body{
     margin: 0;
     background-color:#caf7e3;
-
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    /* position: absolute; */
 }
+
 h1{
     margin-top: 0;
     font-family: 'Sacramento', cursive;
@@ -75,8 +76,8 @@ h2{
 }
 
 /* Navigation */
-.container{
-    width: 80%;
+/* .container{
+    width: auto;
     margin: auto;
 }
 
@@ -118,11 +119,49 @@ nav a{
 
 nav a:hover{
     color: #2C2891;
+} */
+
+/* Navbar */
+nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #55d6aa;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav a{
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+  color: #2C2891;
+  border-bottom: 2px solid var(--secondary-color);
+}
+
+nav ul {
+  display: flex;
+  /* gap: 1.9rem; */
+  list-style: none;
+}
+
+nav li {
+    display: inline;
+    margin-left: 70px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    float: right;
 }
 
 /* Burger Menu */
 .burger-menu {
-    color: var(--primary-color);
+    color: black;
     font-size: 2rem;
     border: 0;
     background-color: transparent;
@@ -231,13 +270,12 @@ display: block;
 
 /* footer */
 .footer{
-    background: fill;
+    /* background: fill; */
     background-color: #55d6aa;
     color: #444;
     text-align: center;
     padding: 0cm 0 0.1cm;
     font-size: x-large;
-
     margin-top: auto;
 }
 .footer p{
@@ -273,4 +311,35 @@ display: block;
 
 .social-list__item{
     margin: 0.5cm;
+}
+
+/*changes reflects on screen with a width of 720px and below*/
+@media screen and (max-width: 720px) {
+    nav {
+        padding: 1.5rem 1rem;
+    }
+
+    nav ul {
+        position: fixed;
+        background-color: beige;
+        flex-direction: column;
+        top: 86px;
+        left: 10%;
+        width: 80%;
+        text-align: center;
+        transform: translateX(120%);
+        transition: transform 0.5s ease-in;
+    }
+    
+    nav ul li {
+        margin: 8px;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    nav ul.show {
+        transform: translateX(0);
+    }
 }
