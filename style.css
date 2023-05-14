@@ -234,6 +234,18 @@ nav a:hover::before{
     padding: 20px;
     margin: 10px;
 }
+
+.frontend {
+    background-color: #FDE2F3;
+}
+
+.backend{
+    background-color: #F9E2AF;
+}
+
+.dsalgo{
+    background-color: #B0DAFF;
+}
 /* Drop Down Project */
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
