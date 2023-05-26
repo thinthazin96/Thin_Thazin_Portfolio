@@ -29,6 +29,7 @@ h2{
     font-family: 'Poppins', sans-serif;
     font-size: 3em;
     text-align: center;
+    word-spacing: 0.3em;
 }  
 .cloud1{
     position: absolute;
