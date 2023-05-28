@@ -29,6 +29,7 @@ h2{
     font-family: 'Poppins', sans-serif;
     font-size: 3em;
     text-align: center;
+    word-spacing: 0.3em;
 }  
 .cloud1{
     position: absolute;
@@ -75,51 +76,6 @@ h2{
     height: 300px;
 }
 
-/* Navigation */
-/* .container{
-    width: auto;
-    margin: auto;
-}
-
-header{
-    background: #55d6aa;
-}
-
-header::after{
-    content: '';
-    display: table;
-    clear: both;
-}
-
-nav{
-    float: right;
-}
-
-nav ul{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-nav li{
-    display: inline-block;
-    margin-left: 70px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    position: relative;
-    
-}
-
-nav a{
-    color: #444;
-    text-decoration: none;
-    text-transform: uppercase;
-
-}
-
-nav a:hover{
-    color: #2C2891;
-} */
 
 /* Navbar */
 nav {
@@ -233,6 +189,23 @@ nav a:hover::before{
     box-shadow: 0 3px 10px var(--primary-shadow);
     padding: 20px;
     margin: 10px;
+}
+
+.project-button{
+    border-radius: 8px;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.project-button:hover{
+    background-color: #2EE59D;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
 }
 
 .frontend {
